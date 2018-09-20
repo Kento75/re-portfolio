@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+a {
+  text-decoration: none;
+}
+
+.articleContainer {
+  overflow: hidden;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+}
+
+.articleItem {
+  float: left;
+  margin: 1.2rem;
+  padding: 1.2rem;
+  background: #79c53e;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+  font-family: "MS ゴシック";
+  color: #123333;
+}
+
+.articleItem:hover {
+  background: #b5f585;
+}

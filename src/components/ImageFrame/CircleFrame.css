@@ -1,0 +1,8 @@
+@charset "utf-8";
+
+.circleFrame, img {
+  border-radius: 50px;
+  border-bottom: 6px solid;
+  border-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+  border-image-slice: 1;
+}
