@@ -1,5 +1,5 @@
 {
-  "name": "personal-portfolio",
+  "name": "re-portfolio",
   "homepage": "https://kento75.github.io/re-portfolio",
   "version": "1.0.0",
   "private": true,
@@ -7,18 +7,16 @@
     "clone": "2.1.1",
     "howler": "2.0.3",
     "jquery": "3.2.1",
-    "material-ui": "0.17.4",
-    "react": "15.5.4",
-    "react-dom": "15.5.4",
-    "react-tap-event": "1.0.3",
-    "react-tap-event-plugin": "2.0.1",
-    "roboto-npm-webfont": "0.0.2",
+    "material-ui": "0.20.0",
+    "react": "16.5.2",
+    "react-dom": "16.5.2",
+    "roboto-npm-webfont": "1.0.1",
     "scroll-to": "0.0.2",
-    "validator": "7.0.0"
+    "validator": "10.7.1"
   },
   "devDependencies": {
     "gh-pages": "2.0.0",
-    "react-scripts": "0.9.5"
+    "react-scripts": "1.1.5"
   },
   "scripts": {
     "start": "react-scripts start",

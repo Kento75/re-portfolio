@@ -12,7 +12,7 @@ class ProgrammingComponent extends Component {
         };
         return (
             <div className="programming">
-              <p className="headline"> Programming skills</p>
+              <p className="headline"> Learning Skills</p>
                 <div className="programming-console">
                     <Paper zDepth={3} style={style}>
                         <div className="console-header">
@@ -39,10 +39,6 @@ class ProgrammingComponent extends Component {
                                           <li>
                                             &lt;<span className="html-1">li</span>&gt;
                                             <span className="html-2">JavaScript</span>
-                                            &lt;/<span className="html-1">li</span>&gt;</li>
-                                          <li>
-                                            &lt;<span className="html-1">li</span>&gt;
-                                            <span className="html-2">Node.js</span>
                                             &lt;/<span className="html-1">li</span>&gt;
                                           </li>
                                           <li>
@@ -67,12 +63,7 @@ class ProgrammingComponent extends Component {
                                           </li>
                                           <li>
                                             &lt;<span className="html-1">li</span>&gt;
-                                            <span className="html-2">Ruby</span>
-                                            &lt;/<span className="html-1">li</span>&gt;
-                                          </li>
-                                          <li>
-                                            &lt;<span className="html-1">li</span>&gt;
-                                            <span className="html-2">PHP7</span>
+                                            <span className="html-2">Ruby on Rails</span>
                                             &lt;/<span className="html-1">li</span>&gt;
                                           </li>
                                           <li>

@@ -14,7 +14,9 @@ class TimelineComponent extends Component {
         this.state = {
           expanded1: false,
           expanded2: false,
-          expanded3: false
+          expanded3: false,
+          expanded4: false,
+          expanded5: false
         };
     }
 
@@ -34,6 +36,14 @@ class TimelineComponent extends Component {
       this.setState({expanded3: expanded3});
     };
 
+    handleExpandChange4 = (expanded4) => {
+      this.setState({expanded4: expanded4});
+    };
+
+    handleExpandChange5 = (expanded5) => {
+      this.setState({expanded5: expanded5});
+    };
+
     handleExpand = () => {
       this.setState({expanded: true});
     };
@@ -44,6 +54,14 @@ class TimelineComponent extends Component {
 
     handleExpand3 = () => {
       this.setState({expanded3: true});
+    };
+
+    handleExpand4 = () => {
+      this.setState({expanded4: true});
+    };
+
+    handleExpand5 = () => {
+      this.setState({expanded5: true});
     };
 
     handleReduce = () => {
@@ -57,49 +75,72 @@ class TimelineComponent extends Component {
     handleReduce3 = () => {
       this.setState({expanded3: false});
     };
+
+    handleReduce4 = () => {
+      this.setState({expanded4: false});
+    };
+
+    handleReduce5 = () => {
+      this.setState({expanded5: false});
+    };
+
     render() {
         return (
             <div className="timeline">
               <p className="headline">Experience</p>
                 <div className="timeline-entry">
                   <Card>
-                      <CardHeader title="Technology Consulting Analyst" subtitle="Accenture"/>
-                      <CardText expandable={true}>
-                          経歴1
-                          <br/><br/>
-                            <div className="timeline-entries">
-                              <div className="timeline-entry-chip">
-                                <Chip>ツールとか</Chip>
-                              </div>
-                              <div className="timeline-entry-chip">
-                                <Chip>ツールとか</Chip>
-                              </div>
-                              <div className="timeline-entry-chip">
-                                <Chip>ツールとか</Chip>
-                              </div>
-                              <div className="timeline-entry-chip">
-                                <Chip>ツールとか</Chip>
-                              </div>
-                              <div className="timeline-entry-chip">
-                                <Chip>ツールとか</Chip>
-                              </div>
-                            </div>
-                      </CardText>
+                      <CardHeader title="Web Frontend Programmer" subtitle="and Backend Programmer"/>
                   </Card>
                 </div>
                   <div className="timeline-entry">
                     <Card expanded={this.state.expanded1} onExpandChange={this.handleExpandChange}>
-                        <CardHeader title="経歴タイトル" subtitle="サブタイトル"
+                        <CardHeader title="Frontend"
                           actAsExpander={true} showExpandableButton={true}/>
                         <CardText expandable={true}>
-                            経歴２
                             <br/><br/>
                               <div className="timeline-entries">
                                 <div className="timeline-entry-chip">
-                                  <Chip>ツールとか</Chip>
+                                  <Chip>TypeScript</Chip>
                                 </div>
                                 <div className="timeline-entry-chip">
-                                  <Chip>ツールとか</Chip>
+                                  <Chip>JavaScript</Chip>
+                                </div>
+                                <div className="timeline-entry-chip">
+                                  <Chip>React.js</Chip>
+                                </div>
+                                <div className="timeline-entry-chip">
+                                  <Chip>Vue.js</Chip>
+                                </div>
+                                <div className="timeline-entry-chip">
+                                  <Chip>Riot.js</Chip>
+                                </div>
+                                <div className="timeline-entry-chip">
+                                  <Chip>JQuery</Chip>
+                                </div>
+                                <div className="timeline-entry-chip">
+                                  <Chip>webpack</Chip>
+                                </div>
+                                <div className="timeline-entry-chip">
+                                  <Chip>Babel</Chip>
+                                </div>
+                                <div className="timeline-entry-chip">
+                                  <Chip>HTML5</Chip>
+                                </div>
+                                <div className="timeline-entry-chip">
+                                  <Chip>CSS3</Chip>
+                                </div>
+                                <div className="timeline-entry-chip">
+                                  <Chip>SASS</Chip>
+                                </div>
+                                <div className="timeline-entry-chip">
+                                  <Chip>Bootstrap</Chip>
+                                </div>
+                                <div className="timeline-entry-chip">
+                                  <Chip>Semantic UI</Chip>
+                                </div>
+                                <div className="timeline-entry-chip">
+                                  <Chip>Material UI</Chip>
                                 </div>
                               </div>
                         </CardText>
@@ -107,16 +148,102 @@ class TimelineComponent extends Component {
                   </div>
                   <div className="timeline-entry">
                   <Card expanded={this.state.expanded2} onExpandChange={this.handleExpandChange2}>
-                      <CardHeader title="タイトル" subtitle="サブタイトル"
+                      <CardHeader title="Backend"
                         actAsExpander={true} showExpandableButton={true}/>
                       <CardText expandable={true}>
-                        経歴３
                           <div className="timeline-entries">
                             <div className="timeline-entry-chip">
-                              <Chip>ツールとか</Chip>
+                              <Chip>Java</Chip>
                             </div>
                             <div className="timeline-entry-chip">
-                              <Chip>ツールとか</Chip>
+                              <Chip>Spring Boot</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>Golang</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>Python3</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>Django</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>Flask</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>Node.js</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>Express</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>PHP7</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>Laravel</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>Wordpress</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>Ruby</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>Ruby on Rails</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>Oracle DB</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>MySQL</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>MariaDB</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>MS SQL Server</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>PostgreSQL</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>DB2</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>SQLite3</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>MongoDB</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>Elastic Search</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>Amazon RedShift</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>Google BigQuery</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>Nginx</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>Apache</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>Docker</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>AWS</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>GCP</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>Firebase</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>Heroku</Chip>
                             </div>
                           </div>
                       </CardText>
@@ -124,19 +251,71 @@ class TimelineComponent extends Component {
                 </div>
                 <div className="timeline-entry">
                   <Card expanded={this.state.expanded3} onExpandChange={this.handleExpandChange3}>
-                      <CardHeader title="タイトル" subtitle="サブタイトル"
+                      <CardHeader title="Mobile"
                         actAsExpander={true} showExpandableButton={true}/>
                       <CardText expandable={true}>
-                          経歴4
                           <div className="timeline-entries">
                             <div className="timeline-entry-chip">
-                              <Chip>ツールとか</Chip>
+                              <Chip>React Native</Chip>
                             </div>
                             <div className="timeline-entry-chip">
-                              <Chip>ツールとか</Chip>
+                              <Chip>Expo</Chip>
+                            </div>
+                          </div>
+                      </CardText>
+                  </Card>
+                </div>
+                <div className="timeline-entry">
+                  <Card expanded={this.state.expanded4} onExpandChange={this.handleExpandChange4}>
+                      <CardHeader title="DevOps"
+                        actAsExpander={true} showExpandableButton={true}/>
+                      <CardText expandable={true}>
+                          <div className="timeline-entries">
+                            <div className="timeline-entry-chip">
+                              <Chip>Ansible</Chip>
                             </div>
                             <div className="timeline-entry-chip">
-                              <Chip>ツールとか</Chip>
+                              <Chip>Jenkins</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>Circle CI</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>Travis CI</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>drone.io</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>AppVeyor</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>Semaphore CI</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>codacy</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>Coveralls</Chip>
+                            </div>
+                          </div>
+                      </CardText>
+                  </Card>
+                </div>
+                <div className="timeline-entry">
+                  <Card expanded={this.state.expanded5} onExpandChange={this.handleExpandChange5}>
+                      <CardHeader title="Business Intelligence"
+                        actAsExpander={true} showExpandableButton={true}/>
+                      <CardText expandable={true}>
+                          <div className="timeline-entries">
+                            <div className="timeline-entry-chip">
+                              <Chip>Yellowfin</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>MotionBoard</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>DataSpider</Chip>
                             </div>
                           </div>
                       </CardText>
