@@ -1,6 +1,6 @@
 {
   "name": "personal-portfolio",
-  "homepage": "https://kento75.github.io/re-portfolio/",
+  "homepage": "https://kento75.github.io/re-portfolio",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
@@ -23,6 +23,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "npm run build && gh-pages -d build"
+    "deploy": "npm run build && gh-pages -d build",
+    "update-only": "gh-pages -d build"
   }
 }
