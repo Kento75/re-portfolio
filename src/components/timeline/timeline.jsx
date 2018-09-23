@@ -119,7 +119,7 @@ class TimelineComponent extends Component {
                                   <Chip>JQuery</Chip>
                                 </div>
                                 <div className="timeline-entry-chip">
-                                  <Chip>webpack</Chip>
+                                  <Chip>Webpack</Chip>
                                 </div>
                                 <div className="timeline-entry-chip">
                                   <Chip>Babel</Chip>
@@ -225,6 +225,24 @@ class TimelineComponent extends Component {
                               <Chip>Google BigQuery</Chip>
                             </div>
                             <div className="timeline-entry-chip">
+                              <Chip>openSUSE</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>Ubuntu Linux</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>Linux Mint</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>CentOS</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>RedHat Enterprise Linux</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>Amazon Linux</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
                               <Chip>Nginx</Chip>
                             </div>
                             <div className="timeline-entry-chip">
@@ -272,7 +290,19 @@ class TimelineComponent extends Component {
                       <CardText expandable={true}>
                           <div className="timeline-entries">
                             <div className="timeline-entry-chip">
+                              <Chip>Dockerfile</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
                               <Chip>Ansible</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>Git</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>GitHub</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>GitLab</Chip>
                             </div>
                             <div className="timeline-entry-chip">
                               <Chip>Jenkins</Chip>
@@ -316,6 +346,9 @@ class TimelineComponent extends Component {
                             </div>
                             <div className="timeline-entry-chip">
                               <Chip>DataSpider</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
+                              <Chip>Dr.Sum EA</Chip>
                             </div>
                           </div>
                       </CardText>
