@@ -142,6 +142,9 @@ class TimelineComponent extends Component {
                                 <div className="timeline-entry-chip">
                                   <Chip>Material UI</Chip>
                                 </div>
+                                <div className="timeline-entry-chip">
+                                  <Chip>Electron</Chip>
+                                </div>
                               </div>
                         </CardText>
                     </Card>
