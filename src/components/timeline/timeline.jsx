@@ -308,6 +308,9 @@ class TimelineComponent extends Component {
                               <Chip>GitLab</Chip>
                             </div>
                             <div className="timeline-entry-chip">
+                              <Chip>Docker Hub</Chip>
+                            </div>
+                            <div className="timeline-entry-chip">
                               <Chip>Jenkins</Chip>
                             </div>
                             <div className="timeline-entry-chip">
