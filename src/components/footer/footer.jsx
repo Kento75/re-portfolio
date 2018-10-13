@@ -28,6 +28,10 @@ class FooterComponent extends Component {
             npm
           </a>
           /
+          <a target="_blank" rel="noopener noreferrer" href="https://hub.docker.com/u/kento75/">
+            Docker Hub
+          </a>
+          /
           <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/Kento751">
             Twitter
           </a>
