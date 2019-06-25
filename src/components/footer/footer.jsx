@@ -17,27 +17,27 @@ class FooterComponent extends Component {
       <div className="footer">
         <div className="link-list">
           <a target="_blank" rel="noopener noreferrer" href="https://github.com/Kento75">
-            Github
-          </a>
-           /
-          <a target="_blank" rel="noopener noreferrer" href="https://qiita.com/Kento75">
-            Qiita
+            GitHub
           </a>
            /
           <a target="_blank" rel="noopener noreferrer" href="https://www.npmjs.com/~kento75">
             npm
           </a>
           /
-          <a target="_blank" rel="noopener noreferrer" href="https://hub.docker.com/u/kento75/">
-            Docker Hub
+          <a target="_blank" rel="noopener noreferrer" href="https://qiita.com/Kento75">
+            Qiita
           </a>
-          /
+           /
           <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/Kento751">
             Twitter
           </a>
            /
           <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kento75-4326a316a/">
             LinkedIn
+          </a>
+          /
+          <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kento75-4326a316a/">
+            Blog
           </a>
         </div>
         <FlatButton labelStyle={{
