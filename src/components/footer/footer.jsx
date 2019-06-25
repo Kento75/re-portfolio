@@ -36,7 +36,7 @@ class FooterComponent extends Component {
             LinkedIn
           </a>
           /
-          <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kento75-4326a316a/">
+          <a target="_blank" rel="noopener noreferrer" href="https://overreact.tk/">
             Blog
           </a>
         </div>
