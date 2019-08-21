@@ -14,14 +14,15 @@ jobs:
     runs-on: ubuntu-latest
 
     strategy:
-      node-version: 8.x
+      matrix:
+        node_version: [8]
 
     steps:
     - uses: actions/checkout@v1
-    - name: Use Node.js ${{ node-version }}
+    - name: Use Node.js ${{ matrix.node_version }}
       uses: actions/setup-node@v1
       with:
-        node-version: ${{ node-version }}
+        node-version: ${{ matrix.node_version }}
     - name: npm install, build
       run: |
         npm install
