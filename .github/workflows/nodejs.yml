@@ -1,0 +1,28 @@
+name: Node CI
+
+on:
+  push:
+    branches:
+    - master
+  pull_request:
+    branches:
+    - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      node-version: 8.x
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ node-version }}
+    - name: npm install, build
+      run: |
+        npm install
+        npm run build
